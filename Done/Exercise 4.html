@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Exercise 4 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+	</head>
+	<body>
+		<p>
+			<a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a>
+		</p>
+		<button onclick="getAttributes()">Click here to get attributes value</button>
+
+		<script>
+			function getAttributes(){
+				var type = document.getElementsByTagName("a")[0].getAttribute("type");
+				var hreflang = document.getElementsByTagName("a")[0].getAttribute("hreflang");
+				var rel = document.getElementsByTagName("a")[0].getAttribute("rel");
+				var target = document.getElementsByTagName("a")[0].getAttribute("target");
+				var href = document.getElementsByTagName("a")[0].getAttribute("href");
+
+				alert("Type: " + type);
+				alert("Hreflang: " + hreflang);
+				alert("Rel: " + rel);
+				alert("Target: " + target);
+				alert("Href: " + href);
+			}
+		</script>
+	</body>
+</html>

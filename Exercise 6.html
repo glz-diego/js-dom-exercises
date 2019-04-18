@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Exercise 6 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Change the content of a cell</title>
+	</head>
+	<body>
+		Content: <input type="text" id="content" placeholder="Content here">
+		Row: <input type="text" id="row" placeholder="Row #">
+		Column: <input type="text" id="column" placeholder="Column #">
+		<br>
+		<br>
+		<table id="myTable" border="1">
+			<tr>
+				<td id="r1c1">Row1 cell1</td>
+				<td id="r1c2">Row1 cell2</td>
+			</tr>
+			<tr>
+				<td id="r2c1">Row2 cell1</td>
+				<td id="r2c2">Row2 cell2</td>
+			</tr>
+			<tr>
+				<td id="r3c1">Row3 cell1</td>
+				<td id="r3c2">Row3 cell2</td>
+			</tr>
+		</table>
+		<br>
+		<form>
+			<input type="button" onclick="changeContent()" value="Change content">
+		</form>
+
+		<script>
+			function changeContent() {
+				var content = document.getElementById("content").value;
+				var row = document.getElementById("row").value;
+				var column = document.getElementById("column").value;
+
+				if(row + column == "11"){
+					console.log(document.querySelector("#r1c1").value)
+				}
+			}
+		</script>
+	</body>
+</html>

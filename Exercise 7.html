@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Exercise 7 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<title>Change the content of a cell</title>
+		<style type="text/css">
+			body {
+				margin: 30px;
+			}
+		</style>  
+	</head>
+	<body>
+		Row: <input type="number" id="row" placeholder="Row #">
+		Column: <input type="number" id="column" placeholder="Column #">
+		<br>
+		<br>
+		<table id="myTable" border="1">
+		</table>
+		<form>
+			<input type="button" onclick="createTable()" value="Create the table">
+		</form>
+
+		<script>
+			// function createTable() {
+			// 	var row = document.getElementById("row").value;
+			// 	var column = document.getElementById("column").value;
+			// 	var table = document.getElementById("myTable");
+			// 	for (var i = 0; i <= row; i++) {
+			// 		table.insertAdjacentHTML("beforeend","<tr id="row"></tr>");
+			// 		for (var i = 0; i <= coulumn; i++) {
+			// 			row.insertAdjacentHTML("beforeend","<td id="column"></td>");
+			// 		}
+			// 	}
+			// }
+
+
+
+			function createTable() {
+				var row = document.getElementById("row").value;
+				var column = document.getElementById("column").value;
+				var table = document.getElementById("myTable");
+				for (var i = 0; i != row; i++) {
+					table.insertAdjacentHTML("beforeend","<tr id='row'><td>hellloooo</td></tr>");
+				}
+
+				var tr = document.getElementById("row");
+
+				for (var a = 0; a != column; a++) {
+					tr.insertAdjacentHTML("beforeend","<td>h2</td>");
+				}
+			}
+		</script>
+
+		</script>
+	</body>
+</html>

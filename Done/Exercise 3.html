@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- Exercise 3 -->
+<html>
+	<head>
+		<meta charset=utf-8 />
+			<title>JS DOM background paragraph style</title>
+		</head> 
+	<body>
+		<p id ='text'>Ut duis eu non quis aliquip culpa dolor eiusmod amet nisi nulla aute.</p> 
+		<div>
+			<button id="jsstyle" onclick="js_style()">Style</button>
+		</div>
+
+		<script>
+			function js_style(){
+				var text = document.getElementById("text");
+				text.style.backgroundColor = "#1d5ec6";
+			}
+		</script>
+	</body>
+</html>
