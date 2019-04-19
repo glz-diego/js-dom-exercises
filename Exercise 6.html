@@ -37,7 +37,15 @@
 				var column = document.getElementById("column").value;
 
 				if(row + column == "11"){
-					console.log(document.querySelector("#r1c1").value)
+
+					var r1c1 = document.querySelector("#r1c1").value;
+
+					var contentSpan = document.createElement('span');
+					contentSpan.innerHTML = content;
+					document.querySelector('#r1c1').appendChild(contentSpan);
+
+
+					console.log(r1c1)
 				}
 			}
 		</script>
