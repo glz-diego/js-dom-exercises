@@ -36,17 +36,8 @@
 				var row = document.getElementById("row").value;
 				var column = document.getElementById("column").value;
 
-				if(row + column == "11"){
-
-					var r1c1 = document.querySelector("#r1c1").value;
-
-					var contentSpan = document.createElement('span');
-					contentSpan.innerHTML = content;
-					document.querySelector('#r1c1').appendChild(contentSpan);
-
-
-					console.log(r1c1)
-				}
+				var x = document.getElementById('myTable').rows[parseInt(row - 1 )].cells;
+				x[parseInt(column - 1 )].innerHTML = content;
 			}
 		</script>
 	</body>
